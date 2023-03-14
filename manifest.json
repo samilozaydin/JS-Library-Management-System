@@ -1,0 +1,23 @@
+{
+    "name": "Library Management",
+    "short_name": "LBM",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "A news app.",
+    "icons": [
+        {
+            "src": "images/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#eaeade",
+    "background_color": "#eaeade"
+}

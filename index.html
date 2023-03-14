@@ -1,0 +1,142 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#eaeade" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Library Management</title>
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/x-icon" href="images/icon.png" />
+        <link rel="apple-touch-icon" href="images/icon192.png" />
+    </head>
+    <body>
+        <header>
+            <div class="navigator color-back">
+                <div class="dropdown">
+                    <button onclick="drop_down_list()" class="dropbtn">
+                        Borrowed
+                    </button>
+                    <div id="myDropdown" class="dropdown-content"></div>
+                </div>
+                <div class="title">
+                    <p>Library Management</p>
+                </div>
+                <div></div>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="side color-back">
+                    <div class="inputs-header">
+                        <p class="color-back">Searching</p>
+                    </div>
+                    <div class="inputs-content">
+                        <span>Name:</span>
+                        <br />
+                        <input id="name" class="text-inputs" type="text" />
+                        <br />
+                        <span>Type:</span>
+                        <select id="type" name="books" id="books">
+                            <option value="none">None</option>
+                            <option value="Roman">Roman</option>
+                            <option value="Romance">Romance</option>
+                            <option value="University">University</option>
+                            <option value="Philosophy">Philosophy</option>
+                        </select>
+                        <br /><br />
+                        <span>Price:</span>
+                        <br />
+                        <input
+                            id="txt_price_low"
+                            class="text-inputs price"
+                            type="text"
+                        />
+                        <span>-</span>
+                        <input
+                            id="txt_price_max"
+                            class="text-inputs price"
+                            type="text"
+                        />
+                        <br />
+                        <span>Author:</span>
+                        <br />
+                        <input id="author" class="text-inputs" type="text" />
+                        <br />
+                        <span>Released year:</span>
+                        <br />
+                        <input id="rel_year" class="text-inputs" type="text" />
+                        <br />
+                        <span>Language:</span>
+                        <select id="language" name="langs">
+                            <option value="none">None</option>
+                            <option value="TR">TR</option>
+                            <option value="ENG">ENG</option>
+                        </select>
+                        <br /><br />
+                        <span>Avaible:</span>
+                        <input
+                            type="radio"
+                            id="yes"
+                            name="isBookAvaible"
+                            value="Yes"
+                        />
+                          <label for="yes">Yes</label>  
+                        <input
+                            type="radio"
+                            id="no"
+                            name="isBookAvaible"
+                            value="No"
+                        />
+                         
+                        <label for="no">No</label> <br />
+                        <button onclick="clean()" class="buttons">Clear</button>
+                        <br />
+                        <button class="buttons" onclick="searchButton()">
+                            Search
+                        </button>
+                        <p style="font-weight: bold; margin: 10px 0px 5px 0px">
+                            Reference:
+                        </p>
+                        <div style="margin: 0px 0px 6px 0px">
+                            <a
+                                href="https://www.w3schools.com/howto/howto_js_dropdown.asp"
+                                style="text-decoration: none"
+                                >Drop-down Menu</a
+                            >
+                        </div>
+                        <div style="margin: 0px 0px 6px 0px">
+                            <a
+                                href="https://www.w3schools.com/howto/howto_css_pagination.asp"
+                                style="text-decoration: none"
+                                >Pagination |</a
+                            >
+                            <a
+                                href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                                style="text-decoration: none"
+                                >Flexbox</a
+                            >
+                        </div>
+                        <div style="margin: 0px 0px 6px 0px">
+                            <a
+                                href="https://www.youtube.com/watch?v=WbbAPfDVqfY"
+                                style="text-decoration: none"
+                                >PWA |</a
+                            >
+                            <a
+                                href="https://www.w3schools.com/howto/howto_css_modals.asp"
+                                style="text-decoration: none"
+                                >Modal Box</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div id="books-place" class="content color-back"></div>
+            </div>
+            <div id="Modal" class="modal">
+                <div id="modal-content" class="modal-content"></div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
