@@ -1,2 +1,11 @@
 # JS-Library-Management-System
- A library program built on JavaScript
+
+This project only contains JavaScript, HTML and CSS and it is PWA.
+
+-   User can display all the books in library
+-   User can borrow books and return them
+-   User can search specific features for a book.
+-   User can display one book information detail.
+    <img src = "1.jpg"></img>
+    <img src = "2.jpg"></img>
+    <img src = "3.jpg"></img>
